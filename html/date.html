@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dateclocl.css">
+</head>
+<body>
+    Current Date: <span id="currentDate"></span><br>
+    <hr style="height:4px;border-width:0;color:darkorange;background-color:red">
+    Time: <span id="clockDisplayId"></span>
+    
+    <script>
+        
+        var currentDate = new Date()
+
+    
+        var day = currentDate.getDate()
+        var month = currentDate.getMonth()+1
+        var year = currentDate.getFullYear()
+
+        
+        var viewDate = day + '-' + month + '-' + year
+        document.getElementById('currentDate').innerHTML = viewDate
+
+        function getTime(){
+    var today = new Date()
+    var h = today.getHours()
+    var m = today.getMinutes()
+    var s = today.getSeconds()
+
+    // console.log(h+":"+m+":"+s)
+   
+    h = chckePrependZero(h)
+    m = chckePrependZero(m)
+    s = chckePrependZero(s)
+
+    document.getElementById('clockDisplayId').innerHTML = h+":"+m+":"+s
+  
+}
+setInterval("getTime()")
+
+var chckePrependZero = function(value){
+    if(value<10)
+        return "0"+value    
+    else
+        return value    
+}
+
+
+
+        
+    </script>
+    
+</body>
+</html>

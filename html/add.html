@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Document</title>
+    <script src="../js/scripts.js"></script>
+</head>
+<body>
+    <script>
+        function newPopUpWindow(){
+    var popupwin = window.open("../html/imges/res.jpg", 'aa', 'width=400, height=400,left=400, top=250')
+    
+    setTimeout(function(){
+        popupwin.close()
+    }, 5000)    
+    
+}
+    </script>
+  <input type="button" value="Click Here" onclick="newPopUpWindow()"/>
+  
+</body>
+</html>
+
+

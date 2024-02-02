@@ -1,0 +1,38 @@
+input[type='button']{
+    width: 95%;
+    height: 50px;
+    background-color:black;
+    color: white;
+    border:2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px red;
+}
+
+input[type='text']{
+    background-color:lightgoldenrodyellow;
+    border:2px solid black;  
+    width:97%;
+    height: 44px;
+    font-size: larger;
+    border-radius: 5px;
+
+    
+  
+}
+table{
+    border:2px solid black;
+    margin: 0 auto;
+    width:50%;
+    height: 400px;
+    font-size:larger;
+   
+   
+}
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2015/07/26/16/35/business-861325_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+.setsize{
+    font-size: larger;
+}
